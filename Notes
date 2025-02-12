@@ -1,1 +1,26 @@
 Notes on files and formats
+
+The Astro Pi computers are based on a Raspberry Pi 4 with a camera module and Sense Hat V2 attached.
+The roll, pitch and yaw data is collected from the Sense Hat accelerometer, as a python dictionary
+in this format  {'roll': 1.0807006359100342, 'pitch': 0.14444319903850555, 'yaw': 1.628937840461731}
+For download this value is stored in a single element of a csv file.
+When the csv file is opened by the csv module the data is not recognised as a dictionary but as a text string.
+The Re (regular expression) module is used to recover the individual values and writes them to the individual lists.
+
+The magnetometer returns data in the format {'x': -3.0550496578216553, 'y': 3.3628623485565186, 'z': 1.759469985961914}
+so is directly interchangable as the re module doesnt discriminate between the two
+
+NoteNames can be changed to any other octave or any combination of notes, as long as the corresponding variable MaxNote is set to 
+(number of notes) - 1. (As the count starts at zero)
+
+If MinSound is set to a value below 20 its too quiet to hear the note being played. MaxSound is set to the maximum value of 127.
+
+MinTime and MaxTime is the time the note is played in seconds. 1 and 2 are probably too long, shorter times seem to sound better.
+BeatsPerMin,240 is fast, any slower and the music imitates the solemn pace of a funeral procession. 
+
+
+
+
+
+
+
