@@ -18,6 +18,10 @@ If MinSound is set to a value below 20 its too quiet to hear the note being play
 MinTime and MaxTime is the time the note is played in seconds. 1 and 2 are probably too long, shorter times seem to sound better.
 BeatsPerMin,240 is fast, any slower and the music imitates the solemn pace of a funeral procession. 
 
+Roll data is mapped to note, Yaw data is mapped to sound (loudness) and pitch data is mapped to time.
+There is no underlying reason to this. Its equally possible to map roll data to sound or time or any other combination.
+Potentially giving six midi tracks per input data file.
+
 
 
 
