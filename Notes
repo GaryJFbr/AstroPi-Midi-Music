@@ -14,6 +14,7 @@ Re and MIDIUtil libraries must be installed
 
 NoteNames can be changed to any other octave or any combination of notes, as long as the corresponding variable MaxNote is set to 
 (number of notes) - 1. (As the count starts at zero)
+OctavesMidiValues is a list of midi values for other octaves.
 
 If MinSound is set to a value below 20 its too quiet to hear the note being played. MaxSound is set to the maximum value of 127.
 
