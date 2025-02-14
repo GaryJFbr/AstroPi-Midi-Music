@@ -7,6 +7,9 @@ For download this value is stored in a single element of a csv file.
 When the csv file is opened by the csv module the data is not recognised as a dictionary but as a text string.
 The Re (regular expression) module is used to recover the individual values and writes them to the individual lists.
 
+Input file is set in line 33.     ISSfile = open("SampleData2.csv", newline='')
+Output file is set in line 87.    open('ISSsoundstrack1.mid', "wb")
+
 The magnetometer returns data in the format {'x': -3.0550496578216553, 'y': 3.3628623485565186, 'z': 1.759469985961914}
 so is directly interchangable as the re module doesnt discriminate between the two
 
