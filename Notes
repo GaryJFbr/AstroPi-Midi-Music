@@ -10,6 +10,8 @@ The Re (regular expression) module is used to recover the individual values and 
 The magnetometer returns data in the format {'x': -3.0550496578216553, 'y': 3.3628623485565186, 'z': 1.759469985961914}
 so is directly interchangable as the re module doesnt discriminate between the two
 
+Re and MIDIUtil libraries must be installed
+
 NoteNames can be changed to any other octave or any combination of notes, as long as the corresponding variable MaxNote is set to 
 (number of notes) - 1. (As the count starts at zero)
 
